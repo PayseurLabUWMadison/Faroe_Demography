@@ -8,10 +8,14 @@
    -O ${sample}.g.vcf.gz \
    -ERC GVCF
 
-   
+   gatk CombineGVCFs \
+   -R mm10.fa \
+   --variant ${sample1}.g.vcf.gz --variant ${sample2}.g.vcf.gz ... \
+   -O ${population}.g.vcf.gz \
+   (--intervals chr{number})
    
    gatk --java-options "-Xmx8g" GenotypeGVCFs \
    -R mm10.fa \
    -V ${population}.g.vcf.gz \
-   -O variants_D1_1.vcf.gz
+   -O ${population}.vcf.gz
 7. Missing genotypes were identified and filled in using GATK --all-sites option for each population
