@@ -7,4 +7,4 @@ METRICS_FILE=/dedup-bamfile-directory/${sample}_duplicate.metrics \
 REMOVE_DUPLICATES=true \
 ASSUME_SORTED=true TMP_DIR=/tmp_${sample}/ \
 MAX_RECORDS_IN_RAM=500000 \
-VALIDATION_STRINGENCY=LENIENT &
+VALIDATION_STRINGENCY=LENIENT
