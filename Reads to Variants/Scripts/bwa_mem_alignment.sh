@@ -11,5 +11,5 @@ lane=$(echo $header | head -n 1 | cut -f4 -d":")
 
 bwa-mem2-directory/bwa-mem2 mem -M -t 4 \
 -R $(echo "@RG\tID:$id.$lane\tPU:$id.$lane.$sm\tSM:$sm\tLB:library"_"$sm\tPL:ILLUMINA") \
-mm39-directory/mm39.fa \
+mm10-directory/mm10.fa \
 $1 $2 | samtools sort -O bam -o ${outfilename}_adapterTrimmed.bam
