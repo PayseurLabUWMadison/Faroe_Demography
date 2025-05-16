@@ -1,0 +1,6 @@
+#!/bin/bash
+
+/relate/scripts/EstimatePopulationSize/EstimatePopulationSize.sh -i Norway4_Nosloy8_Sandoy12_relate_output --first_chr 1 --last_chr 19 -m 5e-9 --poplabels Norway_Nosloy_Sandoy.poplabels --pop_of_interest Nolsoy --years_per_gen 0.5 --threshold 0 --seed 1 -o Norway4_Nosloy8_Sandoy12_relate_output_popsize_nolsoy_forSelection_autosomes &
+/relate/scripts/EstimatePopulationSize/EstimatePopulationSize.sh -i Norway4_Nosloy8_Sandoy12_relate_output --first_chr 1 --last_chr 19 -m 5e-9 --poplabels Norway_Nosloy_Sandoy.poplabels --pop_of_interest Sandoy --years_per_gen 0.5 --threshold 0 --seed 1 -o Norway4_Nosloy8_Sandoy12_relate_output_popsize_sandoy_forSelection_autosomes &
+/relate/scripts/EstimatePopulationSize/EstimatePopulationSize.sh -i Norway4_Nosloy8_Sandoy12_relate_output --first_chr 1 --last_chr 19 -m 5e-9 --poplabels Norway_Nosloy_Sandoy.poplabels --pop_of_interest Norway --years_per_gen 0.5 --threshold 0 --seed 1 -o Norway4_Nosloy8_Sandoy12_relate_output_popsize_norway_forSelection_autosomes &
+/relate/scripts/EstimatePopulationSize/EstimatePopulationSize.sh -i Norway4_Nosloy8_Sandoy12_relate_output --first_chr 1 --last_chr 19 -m 5e-9 --poplabels Norway_Faroe.poplabels --pop_of_interest Faroe --years_per_gen 0.5 --threshold 0 --seed 1 -o Norway4_Nosloy8_Sandoy12_relate_output_popsize_Faroe_forSelection_autosomes &
