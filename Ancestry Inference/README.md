@@ -1,1 +1,1 @@
-For dadi models, the one with two-way migration, ancestral population size change and island population size change was specfied in a python script as the typical example. Specifications for other models are similar.
+
