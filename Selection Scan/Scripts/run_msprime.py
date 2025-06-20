@@ -7,6 +7,8 @@ import allel
 import os
 import sys
 
+# Generating neutral distributions for summary statistics
+
 # Parmaeter names to be replaced with the estimates from best GATK model without inbreeding
 TWMISC = msprime.Demography()
 # Mainland population size
